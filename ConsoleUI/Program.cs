@@ -21,6 +21,6 @@ namespace ConsoleUI
 
             Console.WriteLine($" { emp.FirstName}'s salary is ${emp.Salary }/houre");
             Console.ReadLine();
-        }
+        } 
     }
 }
