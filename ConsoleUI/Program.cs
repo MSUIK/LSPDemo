@@ -9,7 +9,7 @@ namespace ConsoleUI
         {
             Manager accountingVP = new Manager();
             accountingVP.FirstName = "Sufyan";
-            accountingVP.LastName = "Iqbal";
+            accountingVP.LastName = "Iqbal";  
             accountingVP.CalculatePerHourRate(4);
 
             Employee emp = new Manager();

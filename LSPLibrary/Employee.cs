@@ -4,21 +4,15 @@ using System.Text;
 
 namespace LSPLibrary
 {
-    public class Employee
+    public class Employee : BaseEmployee, IManaged
     {
-        public string LastName { get; set; }
-        public string FirstName { get; set; }
-        public object Salary { get; set; }
-        public Employee Manager { get; set; } = null;
+ 
+        public IEmployee Manager { get; set; } = null;
 
 
-        public virtual void CalculatePerHourRate(int rank)
-        {
-            decimal baseAmount = 12.50M;
-            Salary = baseAmount + (rank * 2);
-        }
+       
 
-        public virtual void AssignMAnager(Employee manager)
+        public  void AssignMAnager(IEmployee manager)
         {
             Manager = manager;
 

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LSPLibrary
 {
-    public class CEO:Employee
+    public class CEO:BaseEmployee, IManager
     {
         public override void CalculatePerHourRate(int rank)
         {
@@ -12,10 +12,7 @@ namespace LSPLibrary
             Salary = basAmount *rank;
         }
 
-        public override void AssignMAnager(Employee manager)
-        {
-            throw new InvalidOperationException("The Ceo has no manager");
-        }
+      
         public void GenratePerformanceReview()
         {
             Console.WriteLine("I am reviewing a direct report's performance.");

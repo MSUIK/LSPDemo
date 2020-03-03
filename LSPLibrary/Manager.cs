@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LSPLibrary
 {
-    public class Manager:Employee
+    public class Manager:Employee,IManaged
     {
         
 
